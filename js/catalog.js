@@ -1,6 +1,6 @@
 /* global Product, Cart */
 
-'use strict';
+
 
 // Set up an empty cart for use on this page.
 var cart = new Cart([]);
@@ -44,22 +44,37 @@ function handleSubmit(event) {
   var name = event.target.items.value;
   var quantity = event.target.quantity.value;
 
-  new Cart(name,quantity);
- console.log(Cart);
+  //   var compare = null;
+
+  // var image = document.getElementById('cartContents');
+  var cat = document.getElementById('cartContents');
+  //   compare = Product.allProducts.filePath;
+  //   console.log(Product.allProducts.name);
+  // var belowImage = document.createElement('img');
+  // // var bs = belowImage.src;
+  // // belowImage.textContent = '';
+  // belowImage.src = compare;
+  // cat.appendChild(belowImage);
+
+  new Cart(name);
+  console.log(Cart);
 
 
-    //console.log(name + quantity);
-
-
-
-
-
-  addSelectedItemToCart();
-  cart.saveToLocalStorage();
-  updateCounter();
-  updateCartPreview();
-
+  //console.log(name + quantity);
+  var below = document.createElement('p');
+  below.textContent = `You ordered ${quantity} ${name}(s)`;
+  cat.appendChild(below);
 }
+
+
+
+
+addSelectedItemToCart();
+cart.saveToLocalStorage();
+updateCounter();
+updateCartPreview();
+
+
 
 // TODO: Add the selected item and quantity to the cart
 function addSelectedItemToCart() {

@@ -1,5 +1,5 @@
 /* global Cart */
-'use strict';
+// 'use strict';
 
 // Create an event listener so that when the delete link is clicked, the removeItemFromCart method is invoked.
 var table = document.getElementById('cart');
@@ -19,7 +19,7 @@ function renderCart() {
 }
 
 // TODO: Remove all of the rows (tr) in the cart table (tbody)
-function clearCart() {}
+function clearCart() { }
 
 // TODO: Fill in the <tr>'s under the <tbody> for each item in the cart
 function showCart() {

@@ -1,1 +1,50 @@
 /* TODO: Make it awesome */
+
+header h1 {
+  color: brown;
+  font-size: 56px;
+  text-align: center;
+}
+
+ul li {
+  display: inline-block;
+  margin: 10px 0 10px 30%;
+  font-size: 20px;
+
+}
+
+body {
+  background-color: grey;
+}
+
+main header h1 {
+  color: orange;
+  font-size: 20px;
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+ol {
+  list-style-type: decimal;
+  list-style-position: inside;
+  margin-left: 15px;
+  margin-bottom: 10px;
+}
+
+legend {
+  font-size: 18px;
+  margin: 30px 0px 10px 10px;
+  position: relative;
+  left: 225px;
+  color: khaki;
+}
+
+span {
+  display: block;
+  color: beige;
+}
+
+#cartContents {
+  font-size: 28px;
+  margin-top: 15px;
+}
