@@ -23,7 +23,7 @@ function populateForm() {
     selectElement.appendChild(orderOption);
 
   }
-  //catalogForm.appendChild(selectElement);
+  
 }
 
 populateForm();
