@@ -57,7 +57,7 @@ function handleSubmit(event) {
   // cat.appendChild(belowImage);
 
   new Cart(name);
-  console.log(Cart);
+  // console.log(Cart);
 
 
   //console.log(name + quantity);
